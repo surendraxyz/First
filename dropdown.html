@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: green;
+        }
+        .cc {
+            display: flex;
+            justify-content: space-evenly;
+            background: #000;
+
+            align-items: center;
+            height: 4rem;
+        }
+
+        .c1 {
+
+            padding: 8px;
+            border-radius: 10px;
+            color: #fff;
+            user-select: none;
+        }
+
+        .c1:hover {
+            color: red;
+            background: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cc">
+        <div class="c1">Home</div>
+        <div class="c1" onclick="abc()">About
+            <div class="c2">Services</div>
+            <!-- <div class="c2">Blog</div>
+            <div class="c2">Contact us</div> -->
+        </div>
+
+        <div class="c1">Services</div>
+        <div class="c1">Blog</div>
+        <div class="c1">Contact us</div>
+    </div>
+
+    <script>
+       x = document.querySelectorAll('.c2')
+       for (let a = 0; a < x.length; a++) {
+           b = x[a].style .display = 'none' 
+           h = b
+        }   
+        
+         
+        function abc(){
+            h.style .display = 'block'
+            //document.querySelectorAll('.c2')[0].style .display = 'block' 
+        }
+
+
+    </script>
+
+</body>
+
+</html>
